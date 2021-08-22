@@ -2,11 +2,14 @@ const express = require('express');
 
 const OngController = require('./controllers/OngController');
 const IncidentController = require('./controllers/IncidentController');
+const ProfileController = require('./controllers/ProfileController');
 
 const routes = express.Router();
 
 routes.get('/ongs', OngController.index); // -> GET ONG
 routes.post('/ongs', OngController.create); // -> POST ONG
+
+routes.get('/profile', ProfileController.index); // -> GET ALL INCIDENTS IN THIS ONG
 
 routes.get('/incidents', IncidentController.index); // -> GET INCIDENT
 routes.post('/incidents', IncidentController.create); // -> POST INCIDENT
