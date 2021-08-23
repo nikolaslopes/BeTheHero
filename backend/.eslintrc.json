@@ -13,6 +13,7 @@
     "rules": {
       "linebreak-style": "off",
       "func-names": "off",
-      "camelcase": "off"
+      "camelcase": "off",
+      "no-console": "off"
     }
 }
