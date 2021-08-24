@@ -20,6 +20,7 @@
     "rules": {
       "linebreak-style": "off",
       "react/jsx-filename-extension": "off",
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "no-alert": "off"
     }
 }
