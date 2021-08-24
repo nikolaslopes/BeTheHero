@@ -1,10 +1,14 @@
-import './global.css';
+import { ThemeProvider } from 'styled-components';
 
-import Routes from './routes';
+import GlobalStyles from './assets/styles/global';
+
+import defaultTheme from './assets/styles/themes/default';
 
 function App() {
   return (
-    <Routes />
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyles />
+    </ThemeProvider>
   );
 }
 
