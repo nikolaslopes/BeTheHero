@@ -1,5 +1,3 @@
-import './styles.css';
-
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
@@ -7,6 +5,16 @@ import { FiArrowLeft } from 'react-icons/fi';
 import api from '../../services/api';
 
 import logoImg from '../../assets/images/logo.svg';
+
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+
+import {
+  Container,
+  ContainerContent,
+  Section,
+  FormGroup,
+} from './styles';
 
 export default function NewIncident() {
   const [title, setTitle] = useState('');
@@ -40,9 +48,9 @@ export default function NewIncident() {
   }
 
   return (
-    <div className="new-incident-container">
-      <div className="content">
-        <section>
+    <Container>
+      <ContainerContent>
+        <Section>
           <img src={logoImg} alt="Logo Be The Hero" />
           <h1>Cadastrar novo caso</h1>
           <p>
@@ -53,10 +61,10 @@ export default function NewIncident() {
             <FiArrowLeft size={16} color="#E02041" />
             Voltar para home
           </Link>
-        </section>
+        </Section>
 
-        <form onSubmit={handleNewIncident}>
-          <input
+        <FormGroup onSubmit={handleNewIncident}>
+          <Input
             placeholder="Título do caso"
             value={title}
             onChange={(event) => setTitle(event.target.value)}
@@ -66,15 +74,15 @@ export default function NewIncident() {
             value={description}
             onChange={(event) => setDescription(event.target.value)}
           />
-          <input
+          <Input
             placeholder="Valor em reais"
             value={value}
             onChange={(event) => setValue(event.target.value)}
           />
 
-          <button className="button" type="submit">Cadastrar</button>
-        </form>
-      </div>
-    </div>
+          <Button type="submit">Cadastrar</Button>
+        </FormGroup>
+      </ContainerContent>
+    </Container>
   );
 }
