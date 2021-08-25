@@ -1,5 +1,3 @@
-import './styles.css';
-
 import { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
@@ -7,6 +5,8 @@ import { FiPower, FiTrash2 } from 'react-icons/fi';
 import api from '../../services/api';
 
 import logoImg from '../../assets/images/logo.svg';
+
+import { Container, Header, Cards } from './styles';
 
 export default function Profile() {
   const [incidents, setIncidents] = useState([]);
@@ -47,8 +47,8 @@ export default function Profile() {
   }
 
   return (
-    <div className="profile-container">
-      <header>
+    <Container>
+      <Header>
         <img src={logoImg} alt="Logo Be The Hero" />
         <span>
           Bem vinda,
@@ -56,8 +56,10 @@ export default function Profile() {
           {ongName}
         </span>
 
-        <Link className="button" to="/incidents/new">
-          Cadastrar novo caso
+        <Link
+          to="/incidents/new"
+        >
+          <p>Cadastrar novo caso</p>
         </Link>
 
         <button
@@ -66,31 +68,34 @@ export default function Profile() {
         >
           <FiPower size={18} color="#E02041" />
         </button>
-      </header>
+      </Header>
 
       <h1>Casos cadastrados</h1>
 
-      <ul>
-        {incidents.map((incident) => (
-          <li key={incident.id}>
-            <strong>CASO:</strong>
-            <p>{incident.title}</p>
+      <Cards>
+        <ul>
+          {incidents.map((incident) => (
+            <li key={incident.id}>
+              <strong>CASO:</strong>
+              <p>{incident.title}</p>
 
-            <strong>DESCRIÇÃO:</strong>
-            <p>{incident.description}</p>
+              <strong>DESCRIÇÃO:</strong>
+              <p>{incident.description}</p>
 
-            <strong>VALOR:</strong>
-            <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
+              <strong>VALOR:</strong>
+              <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
-            <button
-              type="button"
-              onClick={() => handleDeleteIncident(incident.id)}
-            >
-              <FiTrash2 size={20} color="#A8A8B3" />
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+              <button
+                type="button"
+                onClick={() => handleDeleteIncident(incident.id)}
+              >
+                <FiTrash2 size={20} color="#A8A8B3" />
+              </button>
+            </li>
+          ))}
+        </ul>
+      </Cards>
+
+    </Container>
   );
 }
