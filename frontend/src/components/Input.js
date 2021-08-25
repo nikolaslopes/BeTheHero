@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default styled.input`
   width: 100%;
   height: 60px;
-  color: #222222;
+  color: ${({ theme }) => theme.colors.gray[900]};
   background: #FFF;
   border: 1px solid #DCDCE6;
   border-radius: 8px;
