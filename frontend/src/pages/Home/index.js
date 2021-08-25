@@ -4,18 +4,22 @@ import { FiLogIn } from 'react-icons/fi';
 
 import api from '../../services/api';
 
+import {
+  Container,
+  Form,
+  Section,
+} from './styles';
+
 import logoImg from '../../assets/images/logo.svg';
 import heroesImg from '../../assets/images/heroes.png';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-
-import {
-  Container, Form, Section,
-} from './styles';
+import Loader from '../../components/Loader';
 
 export default function Home() {
   const [id, setId] = useState('');
+  const [isLoading, setisLoading] = useState(false);
 
   const history = useHistory();
 
@@ -23,12 +27,18 @@ export default function Home() {
     event.preventDefault();
 
     try {
-      const response = await api.post('sessions', { id });
+      await api.post('sessions', { id })
+        .then((response) => {
+          localStorage.setItem('ongId', id);
+          localStorage.setItem('ongName', response.data.name);
 
-      localStorage.setItem('ongId', id);
-      localStorage.setItem('ongName', response.data.name);
-
-      history.push('/profile');
+          setisLoading(true);
+          setTimeout(() => {
+            history.push('/profile');
+          }, 2000);
+        }).catch(() => {
+          setisLoading(false);
+        });
     } catch (error) {
       alert('Falha no login, tente novamente');
     }
@@ -36,6 +46,7 @@ export default function Home() {
 
   return (
     <Container>
+      {isLoading && (<Loader />)}
       <Section>
 
         <img className="logo-img" src={logoImg} alt="Logo Be The Hero" />
