@@ -1,5 +1,3 @@
-import './styles.css';
-
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
@@ -7,6 +5,13 @@ import { FiArrowLeft } from 'react-icons/fi';
 import api from '../../services/api';
 
 import logoImg from '../../assets/images/logo.svg';
+
+import {
+  Container, ContentContainer, Section, GroupForm,
+} from './styles';
+
+import Button from '../../components/Button';
+import Input from '../../components/Input';
 
 export default function Register() {
   const [name, setName] = useState('');
@@ -40,9 +45,9 @@ export default function Register() {
   }
 
   return (
-    <div className="register-container">
-      <div className="content">
-        <section>
+    <Container>
+      <ContentContainer>
+        <Section>
           <img src={logoImg} alt="Logo Be The Hero" />
           <h1>Cadastro</h1>
           <p>
@@ -53,33 +58,33 @@ export default function Register() {
             <FiArrowLeft size={16} color="#E02041" />
             Não tenho cadastro
           </Link>
-        </section>
+        </Section>
 
-        <form onSubmit={handleRegister}>
-          <input
+        <GroupForm onSubmit={handleRegister}>
+          <Input
             placeholder="Nome da ONG"
             value={name}
             onChange={(event) => setName(event.target.value)}
           />
-          <input
+          <Input
             type="email"
             placeholder="E-mail"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
-          <input
+          <Input
             placeholder="WhatsApp"
             value={whatsapp}
             onChange={(event) => setWhatsapp(event.target.value)}
           />
 
           <div className="input-group">
-            <input
+            <Input
               placeholder="Cidade"
               value={city}
               onChange={(event) => setCity(event.target.value)}
             />
-            <input
+            <Input
               placeholder="UF"
               style={{ width: 80 }}
               value={uf}
@@ -87,9 +92,10 @@ export default function Register() {
             />
           </div>
 
-          <button className="button" type="submit">Cadastrar</button>
-        </form>
-      </div>
-    </div>
+          <Button className="button" type="submit">Cadastrar</Button>
+        </GroupForm>
+      </ContentContainer>
+    </Container>
+
   );
 }
