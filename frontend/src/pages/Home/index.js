@@ -1,5 +1,3 @@
-import './styles.css';
-
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
@@ -12,7 +10,9 @@ import heroesImg from '../../assets/images/heroes.png';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { Container, Header, Form } from './styles';
+import {
+  Container, Form, Section,
+} from './styles';
 
 export default function Home() {
   const [id, setId] = useState('');
@@ -36,27 +36,32 @@ export default function Home() {
 
   return (
     <Container>
-      <Header>
+      <Section>
+
         <img className="logo-img" src={logoImg} alt="Logo Be The Hero" />
-        <h1>Faça seu logon</h1>
-      </Header>
 
-      <Form onSubmit={handleLogon}>
+        <Form onSubmit={handleLogon}>
+          <h1>Faça seu logon</h1>
 
-        <Input
-          placeholder="Sua ID"
-          value={id}
-          onChange={(event) => setId(event.target.value)}
-        />
-        <Button type="submit">Entrar</Button>
+          <Input
+            placeholder="Sua ID"
+            value={id}
+            onChange={(event) => setId(event.target.value)}
+          />
+          <Button
+            disabled={false}
+            type="submit"
+          >
+            Entrar
+          </Button>
 
-        <Link className="back-link" to="/register">
-          <FiLogIn size={16} color="#E02041" />
-          Não tenho cadastro
-        </Link>
-
-        <img src={heroesImg} alt="Heroes" />
-      </Form>
+          <Link className="back-link" to="/register">
+            <FiLogIn size={16} color="#E02041" />
+            Não tenho cadastro
+          </Link>
+        </Form>
+      </Section>
+      <img src={heroesImg} alt="Heroes" />
 
     </Container>
   );
