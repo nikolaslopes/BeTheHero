@@ -19,7 +19,7 @@ import Loader from '../../components/Loader';
 
 export default function Home() {
   const [id, setId] = useState('');
-  const [isLoading, setisLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const history = useHistory();
 
@@ -32,21 +32,22 @@ export default function Home() {
           localStorage.setItem('ongId', id);
           localStorage.setItem('ongName', response.data.name);
 
-          setisLoading(true);
+          setIsLoading(true);
           setTimeout(() => {
             history.push('/profile');
           }, 2000);
-        }).catch(() => {
-          setisLoading(false);
         });
     } catch (error) {
       alert('Falha no login, tente novamente');
+      console.log('error', error);
+    } finally {
+      setIsLoading(false);
     }
   }
 
   return (
     <Container>
-      {isLoading && (<Loader />)}
+      <Loader isLoading={isLoading} />
       <Section>
 
         <img className="logo-img" src={logoImg} alt="Logo Be The Hero" />
