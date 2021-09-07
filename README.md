@@ -24,25 +24,21 @@ The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that w
 
  </br></br>
 
-### :partying_face::rocket:Thanks Rocketseat:rocket::partying_face:
-
 <br>
     
-# Techs :rocket:
-- React <img src="imgs/react.png" alt="react" height="18">
-
-- Swiper API
-- Scroll Reveal API
-- Icon Moon Generator
+## Techs :rocket:
+- ReactJS <img src="imgs/react.png" alt="react" height="18">
+- NodeJS <img src="imgs/node.png" alt="node" height="18">
+- SQLite <img src="imgs/sqlite.png" alt="sqlite" height="18">
     
- <br>
+<br>
    
-# 👨🏻‍💻 Author
+## Author :man_technologist:	
 
 - GitHub: [nikolaslopes](https://github.com/nikolaslopes) :octocat:
 - LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) :shipit:
 
-  <br>
+<br>
   
 <p>Thanks for your support :mage_man:<p>
 
