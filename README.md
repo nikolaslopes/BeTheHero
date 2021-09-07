@@ -20,6 +20,24 @@ Thanks Rocketseat :purple_heart: and [Diego Fernandes](https://github.com/diego3
 
 </br></br>
 
+## Run aplication :running_woman:	
+
+Note :raised_hand:: _&nbsp;_  you can use the packages `yarn` or `npm` to run the project
+
+Steps to run:
+
+* Download the `zip project` or execute on terminal: `git clone https://github.com/nikolaslopes/BeTheHero.git`
+
+* Open the folder `BeTheHero`
+
+* Open the front-end and back-end folders and run in both: `yarn install`
+
+* Then, run in both: `yarn start`
+
+* Open in browser: http://localhost:3000
+
+<br>
+
 ## Screenshots :camera_flash:	
 <p>
   <img alt="" title="" src="imgs/sc1.png">
