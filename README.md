@@ -14,10 +14,9 @@
 
 The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that we build App from zero using JavaScript <img src="imgs/js.png" height="18" alt="javascript">. I saw this event months later, even so all the concepts that I learned in this class helped me to know more about JS and be a better coder.
 <br><br>
-Thanks Rocketseat :purple_heart: and [Diego Fernandes](https://github.com/diego3g).
+Thanks Rocketseat :purple_heart: and [Diego Fernandes](https://github.com/diego3g) :technologist:.
 
-[Layout](https://www.figma.com/file/2C2yvw7jsCOGmaNUDftX9n/Be-The-Hero---OmniStack-11?node-id=0%3A1) da aplicação no <img src="imgs/figma.png" alt="figma" height="20"> Figma.
-
+[Layout](https://www.figma.com/file/2C2yvw7jsCOGmaNUDftX9n/Be-The-Hero---OmniStack-11?node-id=0%3A1) da aplicação no Figma <img src="imgs/figma.png" alt="figma" height="20">.
 
 </br></br>
 
