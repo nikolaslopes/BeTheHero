@@ -5,6 +5,8 @@
 <h2 align="center">
    The purpose from Be The Hero is to be a platform when users can create local ONGs to register cases and search for people to help.
 </h2>
+
+<p align="center"> <img src="imgs/heroes.png" alt="heroes" height="250"> </p>
  
 </br></br>
 
@@ -14,15 +16,17 @@ The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that w
 <br><br>
 Thanks Rocketseat :purple_heart: and [Diego Fernandes](https://github.com/diego3g).
 
+[Layout](https://www.figma.com/file/2C2yvw7jsCOGmaNUDftX9n/Be-The-Hero---OmniStack-11?node-id=0%3A1) da aplicação no <img src="imgs/figma.png" alt="figma" height="20"> Figma.
+
 
 </br></br>
 
 ## Screenshots :camera_flash:	
 <p>
   <img alt="" title="" src="imgs/sc1.png">
-  <img alt="" title="" src="imgs/sc1.png">
-  <img alt="" title="" src="imgs/sc1.png">
-  <img alt="" title="" src="imgs/sc1.png">
+  <img alt="" title="" src="imgs/sc2.png">
+  <img alt="" title="" src="imgs/sc3.png">
+  <img alt="" title="" src="imgs/sc4.png">
 </p>
 
 </br></br>
