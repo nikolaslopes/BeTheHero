@@ -6,13 +6,15 @@
    The purpose from Be The Hero is to be a platform when users can create local ONGs to register cases and search for people to help.
 </h2>
  
- </br></br>
+</br></br>
 
-## About OmniStack Week :rocket:
+## About OmniStack Week <img src="imgs/rocketseat.svg" alt="rocketseat" height="30">
 
-The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that we build App from zero using JavaScript <img src="imgs/js.png" height="18" alt="javascript">. I saw this event months later, even so all the concepts that I learned in this class helped me to know more about JS and be a better coder. 
+The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that we build App from zero using JavaScript <img src="imgs/js.png" height="18" alt="javascript">. I saw this event months later, even so all the concepts that I learned in this class helped me to know more about JS and be a better coder.
+<br><br>
+Thanks Rocketseat :purple_heart:
 
- </br></br>
+</br></br>
 
 ## Screenshots :camera_flash:	
 <p>
@@ -22,16 +24,14 @@ The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that w
   <img alt="" title="" src="imgs/sc1.png">
 </p>
 
- </br></br>
-
-<br>
+</br></br>
     
 ## Techs :rocket:
 - ReactJS <img src="imgs/react.png" alt="react" height="18">
 - NodeJS <img src="imgs/node.png" alt="node" height="18">
 - SQLite <img src="imgs/sqlite.png" alt="sqlite" height="18">
     
-<br>
+<br><br>
    
 ## Author :man_technologist:	
 
