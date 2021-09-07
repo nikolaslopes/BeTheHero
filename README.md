@@ -12,7 +12,8 @@
 
 The OmniStack Week was a [Rocketseat](https://rocketseat.com.br/)'s event that we build App from zero using JavaScript <img src="imgs/js.png" height="18" alt="javascript">. I saw this event months later, even so all the concepts that I learned in this class helped me to know more about JS and be a better coder.
 <br><br>
-Thanks Rocketseat :purple_heart:
+Thanks Rocketseat :purple_heart: and [Diego Fernandes](https://github.com/diego3g).
+
 
 </br></br>
 
