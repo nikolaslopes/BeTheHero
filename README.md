@@ -49,14 +49,15 @@ Steps to run:
 </br></br>
     
 ## Techs :rocket:
-- React <img src="gitHub-imgs/nodejs-logo-icon.svg" alt="express" align="center" height="20">
+- React <img src="gitHub-imgs/react-logo-icon.svg" alt="express" align="center" height="20">
+- Styled Components <img src="gitHub-imgs/styled-components-icon.svg" alt="express" align="center" height="20">
 - Express.js <img src="gitHub-imgs/nodejs-logo-icon.svg" alt="express" align="center" height="20">
 - SQLite <img src="gitHub-imgs/sqlite-logo-icon.svg" align="center" alt="sqlite" height="20">
 - Insomnia <img src="gitHub-imgs/insomnia-icon.svg" alt="docker" align="center" height="20">
     
 <br><br>
    
-## Author :man_technologist:	
+## Author <img src="gitHub-imgs/tic-computer-icon.svg" alt="docker" align="center" height="30">
 
 - GitHub: [nikolaslopes](https://github.com/nikolaslopes) :octocat:
 - LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) <img src="gitHub-imgs/linkedin-icon.svg" alt="express" align="center" height="20">
