@@ -26,13 +26,13 @@ Note :raised_hand:: _&nbsp;_  you can use the packages `yarn` or `npm` to run th
 
 Steps to run:
 
-* Download the `zip project` or execute on terminal: `git clone https://github.com/nikolaslopes/BeTheHero.git`
+* Download the `zip project` or execute in the terminal: `git clone https://github.com/nikolaslopes/BeTheHero.git`
 
 * Open the folder in the terminal: `cd BeTheHero`
 
 * Open the front-end and back-end folders in different terminals and run in both: `yarn install`
 
-* Then, run in both terminals: `yarn start`
+* Then, run in both terminals again: `yarn start`
 
 * Open in the`Browser`: http://localhost:3000
 
