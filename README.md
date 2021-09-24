@@ -43,7 +43,7 @@ Steps to run:
   <img alt="" title="" src="gitHub-imgs/sc1.png">
   <img alt="" title="" src="gitHub-imgs/sc2.png">
   <img alt="" title="" src="gitHub-imgs/sc3.png">
-  <img alt="" title="" src="gitHub-imgs/sc4.png" height="auto">
+  <img alt="" title="" src="gitHub-imgs/sc4.png">
 </p>
 
 </br></br>
